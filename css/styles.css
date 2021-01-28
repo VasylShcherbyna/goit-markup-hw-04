@@ -120,6 +120,26 @@ body {
   padding-bottom: 32px;
 }
 .list-contakty .list-mail {
+  display: block;
+  display: flex;
+  align-items: center;
+}
+.icon-mail {
+  margin-right: 10px;
+  width: 16px;
+  height: 12px;
+}
+.list-contakty .list-tel {
+  display: block;
+  display: flex;
+  align-items: center;
+}
+.icon-tel {
+  margin-right: 10px;
+  width: 10px;
+  height: 16px;
+}
+.list-contakty .list-mail {
   margin-right: 50px;
 }
 .header-li a {
@@ -148,8 +168,17 @@ body {
   text-transform: uppercase;
 }
 .container-button {
+  max-width: 1600px;
+  margin: 0;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../img/overlay.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-grow: 1;
   padding: 200px 0;
-  background: #2f303a;
   text-align: center;
 }
 .container-button h1 {
