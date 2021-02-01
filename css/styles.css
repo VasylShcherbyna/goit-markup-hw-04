@@ -128,7 +128,7 @@ body {
   margin-left: auto;
 }
 .list-contakty .link-main {
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
 }
@@ -185,9 +185,11 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  flex-grow: 1;
   padding: 200px 0;
   text-align: center;
+  max-width: 1600px;
+  min-height: 600px;
+  margin: 0 auto;
 }
 .container-button h1 {
   display: block;
@@ -224,7 +226,6 @@ body {
 }
 .list-features-svg {
   display: flex;
-  margin-bottom: 30px;
 }
 .list-features:not(:last-child) {
   margin-right: 30px;
@@ -236,9 +237,10 @@ body {
   width: 270px;
   height: 120px;
   background: #f5f4fa;
+  margin-bottom: 30px;
 }
 .icon {
-  width: 65px;
+  width: 70px;
   height: 70px;
 }
 .features {
@@ -265,7 +267,6 @@ body {
   color: var(--title-text-color);
 }
 .text-p {
-  margin-bottom: 16px;
   display: block;
   font-size: 14px;
   line-height: 1.71;
@@ -276,10 +277,13 @@ body {
   height: 400px;
 }
 .title-post {
-  width: 376px;
-  margin: 0 auto;
+  display: block;
   margin-bottom: 50px;
   text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
 }
 .doing-section {
   padding-top: 0;
@@ -296,10 +300,12 @@ body {
   padding: 94px 0;
 }
 .aside h2 {
-  width: 264px;
-  margin: 0 auto;
   margin-bottom: 50px;
   text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  letter-spacing: 0.03em;
 }
 .container-item {
   display: flex;
@@ -325,12 +331,16 @@ body {
   width: 20px;
   height: 20px;
 }
+.social-list-item {
+  width: 44px;
+  height: 44px;
+}
 .social-list-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 44px;
-  height: 44px;
+  width: 100%;
+  height: 100%;
   background-color: var(--akcent-background);
   border-radius: 50%;
 }
@@ -375,18 +385,48 @@ body {
 .customers:not(:last-child) {
   margin-right: 30px;
 }
-.icon-customers {
-  width: 60px;
-  height: 50px;
+.customers {
+  width: 170px;
+  height: 90px;
+}
+.logo-1 {
+  width: 44px;
+  height: 49px;
+  fill: #afb1b8;
+}
+.logo-2 {
+  width: 40px;
+  height: 52px;
+  fill: #afb1b8;
+}
+.logo-3 {
+  width: 41px;
+  height: 42px;
+  fill: #afb1b8;
+}
+.logo-4 {
+  width: 79px;
+  height: 42px;
+  fill: #afb1b8;
+}
+.logo-5 {
+  width: 59px;
+  height: 47px;
+  fill: #afb1b8;
+}
+.logo-6 {
+  width: 88px;
+  height: 45px;
   fill: #afb1b8;
 }
 .link-customers {
   display: flex;
-  width: 170px;
-  height: 90px;
+  width: 100%;
+  height: 100%;
   border: 1px solid#AFB1B8;
   justify-content: center;
   align-items: center;
+  border-radius: 4px;
 }
 .link-customers:hover .icon-customers,
 .link-customers:focus .icon-customers {
@@ -415,6 +455,7 @@ body {
 }
 .flex {
   display: flex;
+  align-items: baseline;
 }
 .footer-title {
   margin-bottom: 20px;
@@ -502,12 +543,17 @@ body {
   background: #ffffff;
   border: 1px solid #eeeeee;
 }
+.img-portfolio {
+  width: 100%;
+}
 .list-portfolio .subtitle {
   margin-bottom: 4px;
 }
 .portfolio-card {
   display: block;
   padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
 
 .list-portfolio .text-p {
@@ -518,6 +564,10 @@ body {
 .text-p a {
   display: block;
   color: var(--primary-text-color);
+}
+.footer-list .footer-hover:hover,
+.footer-list .footer-hover:focus {
+  color: var(--akcent-color);
 }
 .subtitle {
   font-size: 18px;
